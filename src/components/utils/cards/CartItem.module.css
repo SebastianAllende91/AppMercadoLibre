@@ -1,0 +1,13 @@
+.container {
+  background-color: rgba(226, 219, 219, 0.883);
+  padding: 1rem 0;
+}
+
+.boxHeader {
+  margin: 5px 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: #2196f3;
+}

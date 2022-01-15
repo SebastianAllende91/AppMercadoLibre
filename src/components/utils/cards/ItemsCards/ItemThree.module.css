@@ -1,0 +1,58 @@
+.container {
+  background-color: white;
+}
+
+.deliveryData {
+  color: green;
+  margin: 10px 0px;
+}
+
+.grid {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+
+.select {
+  border: 3px groove #2196f3;
+  font-size: 10px;
+  width: 85%;
+}
+/* 
+.btnPrimary {
+  width: 90%;
+  margin: 5px 5%;
+  font-size: 12px;
+}
+
+.btnSecondary {
+  width: 90%;
+  margin: 10px 5%;
+  background-color: #e3f2fd;
+  color: #2196f3;
+  font-size: 12px;
+} */
+
+.icon {
+  margin-right: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.links {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.text {
+  margin: 3px;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.text2 {
+  font-size: mediun;
+}
