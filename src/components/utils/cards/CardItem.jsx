@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getProductGetById, setLoading } from "../../../actions/productActions";
 import { Box, Container, CssBaseline, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import { getProductGetById, setLoading } from "../../../actions/productActions";
 import ItemThree from "./ItemsCards/ItemThree";
 import ItemTwo from "./ItemsCards/ItemTwo";
 import ItemOne from "./ItemsCards/ItemOne";

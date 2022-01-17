@@ -35,3 +35,35 @@ export const getProductGetById = (values) => async (dispatch) => {
     console.log(error);
   }
 };
+
+export const addToCart = (id) => async (dispatch) => {
+  try {
+    console.log(id);
+    dispatch({ type: TYPES.ADD_TO_CART, payload: id });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const delFromCart =
+  (id, all = false) =>
+  async (dispatch) => {
+    try {
+      console.log(id, all);
+      if (all) {
+        dispatch({ type: TYPES.REMOVE_ALL_FROM_CART, payload: id });
+      } else {
+        dispatch({ type: TYPES.REMOVE_ONE_FROM_CART, payload: id });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+export const cleanCart = () => async (dispatch) => {
+  try {
+    dispatch({ type: TYPES.CLEAR_CART });
+  } catch (error) {
+    console.log(error);
+  }
+};

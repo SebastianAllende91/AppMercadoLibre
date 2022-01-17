@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MainContent from "../layouts/home/MainContent";
+import MainContent from "../layouts/MainContent";
 import CarouselComponent from "../utils/carousel/Carousel";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Grid } from "@mui/material";

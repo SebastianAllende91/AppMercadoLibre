@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Copyright from "../../utils/copyright/Copyright";
+import Copyright from "../utils/copyright/Copyright";
 
 const Footer = () => {
   return (

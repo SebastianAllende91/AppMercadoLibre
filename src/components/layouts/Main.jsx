@@ -3,7 +3,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { Grid } from "@mui/material";
 import Footer from "./Footer";
-import Navbar from "../../utils/navbar/Navbar";
+import Navbar from "../utils/navbar/Navbar";
 
 function Main() {
   return (

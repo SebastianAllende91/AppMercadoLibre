@@ -1,6 +1,6 @@
 import React from "react";
 import { IconButton, Grid, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SelectCategoy from "./SelectCategoy";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -18,6 +18,8 @@ const menu = [
 ];
 
 const Menu = () => {
+  const navigate = useNavigate();
+
   return (
     <Grid container>
       <Grid container item xs={2}>
@@ -64,7 +66,6 @@ const Menu = () => {
               </li>
             ))}
           </ul>
-          {/* </div> */}
         </Grid>
       </Grid>
       <Grid container item xs={4}>
@@ -102,7 +103,7 @@ const Menu = () => {
           </IconButton>
         </Grid>
         <Grid item xs={1}>
-          <IconButton onClick={() => alert("carrito")}>
+          <IconButton onClick={() => navigate(`/cartProducts`)}>
             <ShoppingCartOutlinedIcon
               fontSize="small"
               style={{ color: "black", marginTop: "10px" }}

@@ -2,9 +2,9 @@ import { Container, Grid } from "@mui/material";
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { getProducts, setLoading } from "../../../../actions/productActions";
-import Cards from "../../../utils/cards/Cards";
-import SkeletonProgress from "../../../utils/progress/Loading";
+import { getProducts, setLoading } from "../../../actions/productActions";
+import Cards from "../../utils/cards/Cards";
+import SkeletonProgress from "../../utils/progress/Loading";
 
 const ProductSearch = () => {
   const dispatch = useDispatch();

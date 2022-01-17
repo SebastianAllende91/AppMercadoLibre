@@ -16,18 +16,25 @@ import GppGoodOutlinedIcon from "@mui/icons-material/GppGoodOutlined";
 import LocalShippingOutlinedIcon from "@mui/icons-material/LocalShippingOutlined";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../../../actions/productActions";
 
 const ItemThree = () => {
   const { productSelect } = useSelector((state) => state.ProductReducer);
-  console.log(productSelect);
+  // console.log(productSelect);
 
-  const { initial_quantity, warranty, price } = productSelect;
+  const dispatch = useDispatch();
+
+  const { initial_quantity, warranty, price, id } = productSelect;
 
   const [quantity, setQuantity] = useState(1);
 
   const handleChange = (event) => {
     setQuantity(event.target.value);
+  };
+
+  const addingToCart = () => {
+    dispatch(addToCart(id));
   };
 
   return (
@@ -99,6 +106,7 @@ const ItemThree = () => {
             color: "#2196f3",
             fontSize: "12px",
           }}
+          onClick={addingToCart}
         >
           Agregar al carrito
         </Button>

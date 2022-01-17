@@ -1,5 +1,5 @@
 import React from "react";
-import AlertComponent from "../utils/alerts/Alert";
+import AlertComponent from "../utils/alerts/AlertNotFound";
 
 const NotFound = () => {
   return (
